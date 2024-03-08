@@ -1,0 +1,13 @@
+# Training
+Trainer.total_steps = 15000
+Trainer.log_interval = 10
+Trainer.ckpt_interval = 50
+
+# Input pipeline
+load.name = 'idrid'
+load.data_dir = '/home/data/IDRID_dataset'
+
+#wandb init
+wandb_setup.login_key = '437d367183fc96c3c8cb60c16e92242884c4a24c'
+wandb_setup.Project_Name = 'diabetic_retinopathy'
+wandb_setup.Sweep_Name = 'updated resnet'

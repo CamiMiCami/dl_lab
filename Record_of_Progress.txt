@@ -1,0 +1,146 @@
+
+#Long term goal 1: finish the first running programm with a trainable model
+
+W1 up to 07.Nov:
+ done:
+  - input pipeline by Liu
+ 
+ plan of next week:
+  - evaluation Bao
+  - try intergration of WandB Bao
+  - check model architecture Liu
+  - train.py Liu
+
+W2 up to 14.Nov:
+ done:
+  - train.py by Liu
+  - eval by Bao
+ 
+ plan of next week:
+  - finish eval
+  - let the model run
+  - integrate wandb into train.py and main.py
+ 
+
+W3 up to 21.Nov 
+ done:
+  - running and debugging evaluation workflow including input_pipeline and evaluation (main.py FLAG evaluate) by Bao
+  - intergration of wandb.init into main.py and config.gin by Bao
+  - integration of wandb.log into train.py by Liu
+  - solved an issue with ds_info = None by Liu
+  - new branch for model run and debug by Liu
+  - let the Model run: done
+
+ plan of next week
+  - data augmentation
+  - deep visualization: grad CAM
+  - change label to binary
+  - run model in ISS-GPU, get first reasonable result
+  
+W4 up to 28.Nov
+ done:
+  - started Grad-Cam by Liu
+  - finshed augmentation by Liu
+  
+ plan for next week
+  - debugging for binary classification, fix issue: model not trained now
+  - tune the model
+  - finish Grad-Cam
+
+W5 up to 05.Dec
+ done:
+  - debug fix model archi for binary classification, fix dataset loading bug by Bao
+  - running: several run locally with manually tuning by Bao
+  - finished Grad-Cam by Liu
+ 
+ plan for next week
+  - implement data augumentation
+  - wandb sweep to tune hyperparameter
+  - fix GPU issue
+  
+W6 up to 12.Dec
+ done:
+  - fix GPU crash issue, run remotly in GPU by Bao
+  - hyperparameter tuning based on VGG model and original dataset with wandb sweep by Bao
+  - ResNet with variable block and filter size by Liu
+  - finished data augmentation by Liu
+  
+  
+ plan for next week
+  - try out and tune: VGG model with data augumentation, Resnet
+  - run Grad-Cam, evaluation
+  - start 2. project
+
+W7 up to 19. Dec
+ done:
+  - Everything (Grad-cam, evaluation, augment, new model) integrated: stable running code by Bao
+  - tuning VGG with different augment, training ResNet by Bao
+  - input_pipe for HAPT by Liu
+  - ResNet fix by Liu
+ 
+ plan for next week:
+  - finish input_pipe for HAPT
+  - finish RNN for HAPT 
+
+W8,9,10 up to 09. Jan
+ done:
+  -input_pipe HAPT by Liu
+  -model, train, main HAPT by Bao
+ 
+ plan for next week
+  -debug and run RNN
+  -create data augmentation, implement class weights
+  
+ W11 up to 16.01
+  done:
+   -debug input_pipe, finished data augmentation by Liu
+   -class weights integrated in training route, model was being trained by Bao 
+   -start evaluation by Liu
+   -read data from Nintendo Switch gamepad by Bao
+   
+  plan for next week:
+   -hyperparameter tuning
+   -tune class weights and add augmentation, fix issue of imbalanced dataset
+   -batch normalization layer
+   -plot result (Liu)
+   -beginning poster (issue:imbalanced...) (Liu)
+   -add test-accuracy to both project (Liu)
+
+W12 up to 23.01
+ done:
+  train model RNN/BRNN/LSTM/Bi-LSTM/GRU/Bi-GRU, with/without loss weighting, with/without augmentation by Bao
+  gamepad signal recording and processing 50Hz by Bao
+  plot result HAPT by Liu
+  develop oversampling method by Liu
+  evaluation, organize result and poster by Liu
+ 
+ plan for next week:
+  evaluation for group of checkpoint, test acc
+  integrate oversampling
+  1. project overfitting L2 regularization 
+  2. project
+  plotting function
+  poster PPT
+
+W14 up to 06.02
+ done:
+  finished poster by Liu
+  finished visualization of 2nd project by Liu
+  finished ppt: introduction, issue, solution by Liu
+  finished ppt: model, oversmpling, result by Bao
+  add l2 regularization and tune for 1st project by Bao
+  implement weighted loss 2nd project and tune by Bao
+  integration of tuning, training and evaluation process from 3 different script to main.py, clean configuration. by Bao
+  
+ plan for next week:
+  result for project 1
+  paper project 1
+  grad cam visualization project 1
+  
+Final up to 13.02
+ done:
+  grad cam and guided grad cam by Liu
+  visualization project 1 by Liu
+  tune everything again to get firm result in project 1 by Bao
+  paper for project1 by Liu
+  clean code, README and update everything in git master by Bao

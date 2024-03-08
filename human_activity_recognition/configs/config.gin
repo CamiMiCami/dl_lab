@@ -1,0 +1,13 @@
+# configuration for training route
+Trainer.total_steps = 15000
+Trainer.log_interval = 10
+Trainer.ckpt_interval = 25
+
+#DIR of dataset
+datasets.load.file_raw = r"/home/data/HAPT_dataset/RawData"
+
+# wandb init, login key is from Bao st186295
+wandb_setup.login_key = '437d367183fc96c3c8cb60c16e92242884c4a24c'
+wandb_setup.Project_Name = 'human_activity_recognition'
+wandb_setup.Sweep_Name = 'Name_of_Tuning'
+
